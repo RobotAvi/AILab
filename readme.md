@@ -37,7 +37,7 @@ Ollama models https://ollama.com/library
 
 3. Run the script:
    ```bash
-   python script.py
+   python Start_n8n_and_ollama.py
    ```
 
 ## Usage
@@ -64,7 +64,7 @@ The script provides a menu with the following options:
 
 ### Example
 ```bash
-python script.py
+python Start_n8n_and_ollama.py
 ```
 ```
 n8n ollama Management Menu:
@@ -79,7 +79,7 @@ Enter your choice (1-5): 1
 
 ## Configuration
 
-The script uses the following constants (defined at the top of `script.py`):
+The script uses the following constants (defined at the top of `Start_n8n_and_ollama.py`):
 
 - **Ollama:**
   - Container name: `ollama`
