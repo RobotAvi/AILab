@@ -43,7 +43,7 @@ def install_ollama():
         print("Installing Ollama...")
         run_command(f'docker run -d --network {N8N_NETWORK_NAME} --name {OLLAMA_CONTAINER_NAME} -p {OLLAMA_PORT} ollama/ollama', check=True)
         print("Ollama installed successfully")
-        print("Pulling llama3.2 model...")
+        print("Pulling llama3.2 model... It could take a few minutes")
         run_command(f'docker exec {OLLAMA_CONTAINER_NAME} ollama pull llama3.2', check=True)
         print("Model llama3.2 pulled successfully")
     else:
@@ -108,6 +108,7 @@ def main():
             install_ollama()
             install_n8n()
             run_services()
+            time.sleep(5)  # Wait for n8n to fully start
             webbrowser.open('http://localhost:5678')
         elif choice == '2':
             stop_services()
