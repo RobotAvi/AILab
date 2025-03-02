@@ -1,5 +1,14 @@
-ignore/My_workflow (1).json
-ignore/run_n8n_test_llm_agent.bat
-ignore/Start_n8n_and_ollama_001.py
+# Игнорировать всю папку ignore и её содержимое
+ignore/
+
+# Игнорировать всю папку n8n_workflows и её содержимое
 n8n_workflows/
-ignore/My_workflow.json
+
+# Игнорировать все .json файлы в корне и подпапках (опционально, если нужно)
+# *.json
+
+# Игнорировать все .bat файлы в корне и подпапках (опционально, если нужно)
+# *.bat
+
+# Игнорировать все .py файлы в корне и подпапках (опционально, если нужно)
+# *.py
