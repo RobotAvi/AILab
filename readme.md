@@ -122,4 +122,4 @@ Feel free to submit issues or pull requests if you’d like to improve this scri
 ## License
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
-```
+
